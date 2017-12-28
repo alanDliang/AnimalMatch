@@ -1,0 +1,190 @@
+<!-- Local stylesheet -->
+<link rel="stylesheet" href="/assets/stylesheets/quiz.css">
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Local JS -->
+<script rel="JavaScript" src="/assets/quiz.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!-- BROWSERIFY LINK -->
+<!-- <script src="/assets/bundle.js"></script> -->
+
+<!-- QUIZ -->
+  <div class="container">
+    <h2 id="quiz-title">Tell Us About Yourself:</h2>
+    <!-- NAME & EMAIL INPUT -->
+    <!-- <div class="row">
+      <div class="input-field col s6">
+        <input id="first_name" type="text" class="validate">
+        <label for="first_name">First Name</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div> -->
+
+    <!-- PET SELECTOR -->
+<form name="user-background">
+    <div class="row">
+      <div class="col s4 push-s1">
+        <h6>Kind of Animal:</h6>
+          <p><label>
+             <input class="with-gap" type="radio" name="animal-group" value="cat"/>
+             <span>Cat</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="animal-group" value="dog"/>
+             <span>Dog</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="animal-group" value="bird"/>
+             <span>Bird</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="animal-group" value="reptile"/>
+             <span>Reptile</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="animal-group" value="smallfurry"/>
+             <span>Small & Furry</span>
+           </label></p>
+      </div>
+
+      <!-- CURRENT PETS -->
+      <div class="col s3">
+        <h6>Pet Size</h6>
+          <p><label>
+             <input type="radio" class="with-gap" name="size-group" value="S"/>
+             <span>Small</span>
+           </label></p>
+
+          <p><label>
+             <input type="radio" class="filled-in" name="size-group" value="M"/>
+             <span>Medium</span>
+           </label></p>
+
+           <p><label>
+              <input type="radio" class="with-gap" name="size-group" value="L"/>
+              <span>Large</span>
+            </label></p>
+
+            <p><label>
+               <input type="radio" class="with-gap" name="size-group" value="XL"/>
+               <span>Extra Large</span>
+             </label></p>
+      </div>
+
+      <!-- CHILDREN IN HOME -->
+      <div class="col s4">
+        <h6>Age of Animal:</h6>
+          <p><label>
+             <input class="with-gap" type="radio" name="age-group" value="baby"/>
+             <span>Baby</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="age-group" value="young"/>
+             <span>Young</span>
+           </label></p>
+
+          <p><label>
+            <input class="with-gap" type="radio" name="age-group" value="adult"/>
+            <span>Adult</span>
+          </label></p>
+
+          <p><label>
+           <input class="with-gap" type="radio" name="age-group" value="senior"/>
+           <span>Senior</span>
+         </label></p>
+      </div>
+    </div>
+
+    <!-- ROW TWO -->
+    <div class="row">
+
+      <!-- HOME TYPE -->
+      <div class="col s4 push-s1">
+        <h6>Type of Home:</h6>
+          <p><label>
+             <input class="with-gap" type="radio" name="home-group" value="home-wb"/>
+             <span>House with Backyard</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="home-group" value="home-wob"/>
+             <span>House without Backyard</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="home-group" value="apartment"/>
+             <span>Apartment</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="home-group" value="home-other"/>
+             <span>Other</span>
+           </label></p>
+
+          <p>
+            <div class="input-field col s9">
+              <input placeholder="Other Home Type" value="other-home" name="home-group" type="text" class="validate">
+            </div>
+          </p>
+      </div>
+
+      <!-- ACTIVITY LEVEL -->
+      <div class="col s3">
+        <h6>Level of Activity:</h6>
+          <p><label>
+             <input class="with-gap" type="radio" name="activity-level" value="highly-active"/>
+             <span>Highly Active Daily</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="activity-level" value="active"/>
+             <span>Active Daily</span>
+           </label></p>
+
+          <p><label>
+             <input class="with-gap" type="radio" name="activity-level" value="moderately-active"/>
+             <span>Not Very Active</span>
+           </label></p>
+
+          <p><label>
+              <input class="with-gap" type="radio" name="activity-level" value="inactive"/>
+              <span>Mostly Inactive</span>
+            </label></p>
+      </div>
+
+      <!-- BREED TYPE -->
+      <div class="col s3">
+        <h6>Your Location:</h6>
+        <div class="input-field col s6">
+          <input id="user-zip" type="text" class="validate">
+          <label for="user-zip">Zip Code</label>
+        </div>
+      </div>
+
+      <div class="col s2">
+        <button class="btn waves-effect waves-light" type="submit" name="action" id="submit-button">Submit
+           <i class="material-icons right">Submit</i>
+         </button>
+      </div>
+    </div>
+  </form>
+  </div>
